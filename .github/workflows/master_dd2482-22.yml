@@ -32,6 +32,7 @@ jobs:
 
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
       - name: Run Tests
+        working-directory: code/
         run: python -m pytest
 
       - name: Upload artifact for deployment jobs
